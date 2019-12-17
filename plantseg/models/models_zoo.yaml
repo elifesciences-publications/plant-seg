@@ -4,9 +4,90 @@ unet_ds2x_bce:
   path: https://oc.embl.de/index.php/s/61s67Mg5VQy7dh9/download?path=%2FArabidopsis-Ovules%2Funet_ds2x_bce&files=
   resolution: [0.235, 0.150, 0.150]
   description: Unet trained on Ovules.
+
 unet_bce_with_aff:
   path: https://oc.embl.de/index.php/s/61s67Mg5VQy7dh9/download?path=%2FLateral-Root-Primordia%2Funet_bce_with_aff_t0t3t9t25t35t40t49&files=
   resulution: [1, 1, 1]
   description: Unet trained on root.
+
+unet_ds2x_bce_cgr:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds2x_bce_gcr_all:
+  path: None
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds2x_dice_gcr_all:
+  path: None
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds2x_bce_crg:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds2x_bce_gcr_noise:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+resunet_ds2x_bce_gcr:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description:
+
+unet_ds2x_bce_gcr:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds2x_dice_gcr:
+  path: None
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds2x_bce_gcr_aff:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds2x_dice_gcr_aff:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds1x_bce_aff_cgr:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds1x_bce_aff_crg:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds1x_bce_aff_gcr:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds1x_bce_cgr:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds1x_bce_gcr:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
+
+unet_ds1x_dice_gcr:
+  path:
+  resolution: [0.235, 0.150, 0.150]
+  description: None
 
 
