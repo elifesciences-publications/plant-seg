@@ -1,0 +1,5 @@
+segmentation_file,gt_file,voi,adapted_rand,hash,segmentation_algorithm,down_sampling,metadata_train,metadata_segmentation
+Beautiful_T00010_crop_x40-1630_y520-970_gt_predictions_multicut.h5,Beautiful_T00010_crop_x40-1630_y520-970_gt.h5,"(0.1487368888565851, 0.2123668826070845)",0.02359294167220294,"('60d5ce8479235d48282e8982e0553587', '4c5cc25fc8d1fcb80b691aecc5693eec')",MultiCut,"[1, 1, 1]",,
+Beautiful_T00020_crop_x40-1630_y520-970_gt_predictions_multicut.h5,Beautiful_T00020_crop_x40-1630_y520-970_gt.h5,"(0.1811505665587434, 0.5459151650064527)",0.09754085869343276,"('204761a3aaf55f4662eee2ca1a3c2066', '414db841e9b99690ffb7ced7165557f0')",MultiCut,"[1, 1, 1]",,
+Marvelous_T00045_predictions_multicut.h5,Marvelous_T00045.h5,"(0.24537700472283908, 0.6492400249294694)",0.06629842231676975,"('b6eebbc34b7cba800c4a27310946b19e', '56c7d7da9e9ae31e68d0eddabe24637e')",MultiCut,"[1, 1, 1]",,
+Marvelous_t00006_crop_x420_y620_gt_predictions_multicut.h5,Marvelous_t00006_crop_x420_y620_gt.h5,"(0.11873136720927825, 0.29533128620610966)",0.0077340710217214115,"('72cdd4bb9a8f853e65d86ccf182bea85', 'eb25dec7a2d28165a7b4bff081555653')",MultiCut,"[1, 1, 1]",,

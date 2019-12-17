@@ -1,0 +1,5 @@
+gt,pmap,accuracy,f1 score
+/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/Beautiful_T00010_crop_x40-1630_y520-970_gt.h5,/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/unet_ds1x_bce_aff_crg/Beautiful_T00010_crop_x40-1630_y520-970_gt_predictions.h5,0.9667902194061658,0.6566472803746045
+/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/Beautiful_T00020_crop_x40-1630_y520-970_gt.h5,/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/unet_ds1x_bce_aff_crg/Beautiful_T00020_crop_x40-1630_y520-970_gt_predictions.h5,0.9610966978964545,0.6113257067093703
+/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/Marvelous_T00045.h5,/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/unet_ds1x_bce_aff_crg/Marvelous_T00045_predictions.h5,0.9616920555555556,0.6485720684048634
+/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/Marvelous_t00006_crop_x420_y620_gt.h5,/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/unet_ds1x_bce_aff_crg/Marvelous_t00006_crop_x420_y620_gt_predictions.h5,0.9751969978710217,0.6131172392383302

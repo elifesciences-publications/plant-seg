@@ -1,0 +1,47 @@
+path: /export/home/lcerrone/Datasets/TUM_Ovules_Dataset/Ovules_test_final/unet_ds2x_bce_cgr
+preprocessing:
+  factor:
+  - 1.0
+  - 1.0
+  - 1.0
+  filter:
+    filter_param: 1.0
+    state: false
+    type: gaussian
+  order: 2
+  save_directory: preprocessing
+  state: false
+segmentation:
+  gasp_beta_bias: 0.6
+  gasp_linkage_criteria: mutex_watershed
+  n_threads: 6
+  name: MutexWS
+  post_minsize: 50
+  run_ws: true
+  save_directory: MutexWS
+  state: true
+  ws_minsize: 30
+  ws_sigma: 1.0
+  ws_threshold: 0.5
+unet_prediction:
+  device: cuda
+  model_name: unet_ds2x_bce_cgr
+  model_update: false
+  patch:
+  - 128
+  - 224
+  - 224
+  postprocessing:
+    factor:
+    - 1
+    - 1
+    - 1
+    order: 2
+    state: false
+    tiff: false
+  state: false
+  stride:
+  - 64
+  - 128
+  - 128
+  version: best

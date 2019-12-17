@@ -1,0 +1,8 @@
+segmentation_file,gt_file,voi,adapted_rand,hash,segmentation_algorithm,down_sampling,metadata_train,metadata_segmentation
+N_294_final_crop_ds2_predictions_multicut.h5,N_294_final_crop_ds2.h5,"(0.34038593093531544, 0.5853078519272972)",0.197876813201173,"('35358f6b636a107a1562063ad0b5f53f', 'abeade7eae728d852a3eacdba1a99cd1')",MultiCut,"[1, 2, 2]",,
+N_435_final_crop_ds2_predictions_multicut.h5,N_435_final_crop_ds2.h5,"(0.37400757169170573, 0.3124311273762793)",0.09109255083093704,"('4a643682221c5afe203a8ca713fd596a', 'e38d1d9eb7cad675a77e627c2e9f8eee')",MultiCut,"[1, 2, 2]",,
+N_441_final_crop_ds2_predictions_multicut.h5,N_441_final_crop_ds2.h5,"(0.2922641413661251, 0.2923457468748953)",0.08782265074695117,"('a873156b773a84a0105f79a7417509b6', '4c7d9fcab65d960c42db99a3015cbb9a')",MultiCut,"[1, 2, 2]",,
+N_511_final_crop_ds2_predictions_multicut.h5,N_511_final_crop_ds2.h5,"(0.2993898035039227, 0.32774360561036586)",0.08149727530249429,"('eea7bac0bc7294e9efc573b765242b5c', 'e53bf8cf7d3425688a141b4dc1af7b10')",MultiCut,"[1, 2, 2]",,
+N_522_final_crop_ds2_predictions_multicut.h5,N_522_final_crop_ds2.h5,"(0.29829649450515916, 0.2937217340944489)",0.06627272560233799,"('2d443561f997a11d9df6a07e10616b7d', '044dd245270f85d7aba99ca3e457ea93')",MultiCut,"[1, 2, 2]",,
+N_590_final_crop_ds2_predictions_multicut.h5,N_590_final_crop_ds2.h5,"(0.4303325577121045, 0.4089046110276566)",0.16645046245839445,"('a827698627e19eab5eca1729936f3c3e', '0c1022687f80a63d15c77a92502bbcb3')",MultiCut,"[1, 2, 2]",,
+N_593_final_crop_ds2_predictions_multicut.h5,N_593_final_crop_ds2.h5,"(0.38594128393713667, 0.40304845272253387)",0.13655117413157902,"('53ea9ed6e7c4d148263a342fc0ee0dfe', '753ab8546327406acf91c236c23c468c')",MultiCut,"[1, 2, 2]",,
