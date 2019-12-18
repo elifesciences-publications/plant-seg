@@ -130,10 +130,14 @@ def run_evaluation(gtarray, segarray, seg_background_zero=False):
     return scores
 
 
-def collect_results(header, scores, gt, seg):
+def collect_results(header, scores, gt, seg, full_path=True):
     new_header = copy.deepcopy(header)
-    new_header["gt_file"] = os.path.split(gt)[1]
-    new_header["segmentation_file"] = os.path.split(seg)[1]
+    if full_path:
+        new_header["gt_file"] = gt
+        new_header["segmentation_file"] = seg
+    else:
+        new_header["gt_file"] = os.path.split(gt)[1]
+        new_header["segmentation_file"] = os.path.split(seg)[1]
 
     for key, value in scores.items():
         new_header[key] = value
@@ -174,7 +178,8 @@ if __name__ == "__main__":
                            else True)
 
     # Make sure that GT and segmentation directories are present in the FS
-    assert os.path.isdir(eval_config["gt_dir"]) and os.path.isdir(eval_config["seg_dir"])
+    # TODO assert fail for nested directories
+    # assert os.path.isdir(eval_config["gt_dir"]) and os.path.isdir(eval_config["seg_dir"])
 
     # Parse the files paths and return an iterable of tuples (gt_path, seg_path)
     if 'files_pairs' in eval_config:
