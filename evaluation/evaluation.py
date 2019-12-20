@@ -187,11 +187,14 @@ if __name__ == "__main__":
         gt_seg_all = parse_gt_seg_file_pairs(eval_config['files_pairs'], eval_config['gt_dir'], eval_config['seg_dir'])
     else:
         # List all files
+
         _all_gt = sorted(glob.glob(os.path.join(eval_config["gt_dir"], "*.h5")))
         _all_seg = sorted(glob.glob(eval_config["seg_dir"] + "/*.h5"))
         gt_seg_all = automatic_file_matching(_all_gt, _all_seg)
 
     # Run evaluation
+    timer = time.time()
+
     for _gt, _seg in gt_seg_all:
         print(f'Evaluating {_seg} with GT {_gt}...')
         # Load GT and segmentation into memory
@@ -202,6 +205,10 @@ if __name__ == "__main__":
 
         _scores = run_evaluation(_gtarray, _segarray, seg_background_zero)
         results.append(collect_results(result_placeholder, _scores, _gt, _seg))
+
+        if time.time() - timer > 30*60:
+            write_csv(eval_config["output_csv"], results)
+            timer = time.time()
 
     # Save CSV
     write_csv(eval_config["output_csv"], results)
