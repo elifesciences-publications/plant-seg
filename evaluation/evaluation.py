@@ -117,6 +117,10 @@ def run_evaluation(gtarray, segarray, seg_background_zero=False):
         value, counts = np.unique(segarray, return_counts=True)
         segarray[segarray == value[counts.argmax()]] = 0
 
+        mask = gtarray != 0
+        gtarray = gtarray[mask].ravel()
+        segarray = segarray[mask].ravel()
+
     # Run all metric
     print("- Start evaluations")
     scores = {}
@@ -174,7 +178,7 @@ if __name__ == "__main__":
     result_placeholder = create_result_placeholder(eval_config, metrics=metrics)
     results = []
 
-    seg_background_zero = (eval_config["seg_background_zero"] if eval_config["seg_background_zero"] in eval_config
+    seg_background_zero = (eval_config["seg_background_zero"] if "seg_background_zero" in eval_config
                            else True)
 
     # Make sure that GT and segmentation directories are present in the FS
@@ -206,8 +210,8 @@ if __name__ == "__main__":
         _scores = run_evaluation(_gtarray, _segarray, seg_background_zero)
         results.append(collect_results(result_placeholder, _scores, _gt, _seg))
 
-        if time.time() - timer > 30*60:
-            write_csv(eval_config["output_csv"], results)
+        if time.time() - timer > 1:
+            write_csv(eval_config["output_csv"] + "_tmp", results)
             timer = time.time()
 
     # Save CSV

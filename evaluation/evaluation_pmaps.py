@@ -71,7 +71,6 @@ if __name__ == "__main__":
                  "unet_ds1x_bce_aff_cgr"]
                  ## "unet_ds1x_bce_gcr"]
 
-
     for file_name, path in zip(name_files, all_paths):
         all_gt = sorted(glob.glob("/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/*.h5"))
         all_seg = sorted(glob.glob("/export/home/lcerrone/Datasets/COS-RootPrimordia2/test/" + path + "/*ons.h5"))

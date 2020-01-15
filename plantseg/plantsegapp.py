@@ -67,7 +67,7 @@ class PlantSegApp:
         self.build_all()
 
         self.plant_segapp.protocol("WM_DELETE_WINDOW", self.close)
-        sys.stdout = StdoutRedirect(self.out_text)
+        #sys.stdout = StdoutRedirect(self.out_text)
         self.plant_segapp.mainloop()
 
     def update_font(self, size=10, family="helvetica"):

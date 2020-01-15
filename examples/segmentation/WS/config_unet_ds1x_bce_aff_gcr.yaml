@@ -20,7 +20,7 @@ segmentation:
   state: true
   ws_minsize: 50
   ws_sigma: 0.3
-  ws_threshold: 0.6
+  ws_threshold: 0.5
 unet_prediction:
   device: cuda
   model_name: unet_ds1x_bce_aff_gcr

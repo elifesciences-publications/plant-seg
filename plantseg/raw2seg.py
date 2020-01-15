@@ -95,6 +95,8 @@ def _create_predict_config(_config, all_paths):
         config["model"][key] = value
 
     config["model_name"] = _config["model_name"]
+    print(config)
+    exit()
     return config
 
 
