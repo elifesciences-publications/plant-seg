@@ -1,3 +1,5 @@
+This code is associated with the paper from Wolny et al., "Accurate and versatile 3D segmentation
+of plant tissues at cellular resolution". eLife, 2020. http://doi.org/10.7554/eLife.57613
 ![alt text](./plantseg/gui/logo.png)
 
 [![Build Status](https://travis-ci.com/hci-unihd/plant-seg.svg?branch=master)](https://travis-ci.com/hci-unihd/plant-seg)
